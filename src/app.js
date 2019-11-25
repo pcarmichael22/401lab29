@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'Peter Carmichael Lab 28',
+      title: 'Peter Carmichael Lab 29',
+      lab: 'Add something to your To-Do list!',
       copywrite: 'Peter Carmichael 2019'
     };
   }
@@ -20,7 +21,7 @@ class App extends React.Component {
     console.log(this.state.count, this.state.results);
     return (
       <React.Fragment>
-        <Header title={this.state.title} />
+        <Header title={this.state.title} lab={this.state.lab} />
         <Form />
         <Footer display={this.state.copywrite} />
       </React.Fragment>
